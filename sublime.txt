@@ -1,0 +1,62 @@
+
+Projeto desenvolvido com o uso do Excel para limpeza e modelagem de dados, além da análise e desenvolvimento de visualizações.
+
+Dicionário de dados
+- Work_year: ano de extração dos dados, variando de 2020 a 2023;
+- Expert_level: nível dos cargos como 'EN' (Entry ou Júnior), 'MI' (Middle ou Pleno), 'SE' (Senior ou Sênior) e 'EX' (Expert ou Especialista);
+- Employment_title: modalidade do cargo, podendo ser 'CT' (Contract Type ou Contrato por um determinado período), 'FL' (Freelancer), 'FT' (Full-Time ou Tempo integral) e 'PT' (Partial-time ou Meio-período);
+- Job_title: nome do cargo com 93 cargos distintos;
+- Salary_in_USD: salário anual em Dólar;
+- Company_location: código do país sede da empresa;
+- Company_size: indica o tamanho da empresa, podendo ser 'S' (Small ou Pequena), 'M' (Medium ou Média) e 'L' (Large ou Grande).
+
+Foram criadas colunas descritivas para facilitar na visualização de dados, além de outros arquivos CSV para realizar correlação de dados, como identificar continente do país.
+Para eliminar possíveis duplicatas remanescentes, foi criado o campo 'ID' formatado da seguinte forma:
+Work_year + Expert_level + Employment_type + Salary_in_USD + Company_location + Job_title
+E através desse ID foram encontrados e retirados mais alguns registros duplicados. 
+Restando 2406 registros únicos.
+
+Processo
+
+Abri o arquivo .CSV no Excel e realizei a limpeza e tratamento dos dados para prepará-los para análises.
+Foram criados relações com outros arquivos de diversas fontes, para juntar dados relevantes para as análises.
+Criado visualizações para extrair insights do conjunto de dados.
+
+** Análises individuais das colunas relevantes
+
+Ano de extração dos dados (Work_year)
+
+O gráfico nos mostra um crescimento exponencial de 2021 para 2022 e uma estabilizada de 2022 para 2023.
+Proporciona um sentimento de crescimento, uma vez que o ano de 2023 não acabou e já superou os números de 2022.
+
+//work_year
+
+Níveis dos cargos (Expert_level)
+
+Observa-se uma predominância de cargos seniores, com mais do dobro de cargos plenos. O que pode influenciar em muito na hora de comparar salários e outras análises, devendo ser observado cuidadosamente quando for realizá-las para não ter resultados tendenciosos.
+
+//qtdade_nivel - gráfico 1
+
+Modalidade do cargo (Employment_type)
+
+Por ser apenas 4 categorias, não foi possível criar uma visualização para expressar essa diferença gigantesca, uma vez que mais de 98% dos registros se encontra na categoria de Tempo Integral (Full-time)
+
+//emp_type - tabela
+
+País sede da empresa (Company_location)
+
+Foram registrados 72 países distintos, sendo os Estados Unidos da América com 1759 registros. 
+O Brasil aparece em 8º colocado com apenas 15 registros. Segue um recorte da tabela com os países:
+
+//tabela ta na pasta
+
+Tamanho da empresa (Company_size)
+
+Temos 3 tipos de tamanhos e podemos ver que a maioria são empresas Médias, seguidas das Grandes e poucas Pequenas.
+
+//emp_type - gráfico
+
+Encerrando as análises individuais dos dados para passarmos para a parte de verificar as relações que podemos verificar entre os dados.
+
+** Relacionando dados para extrair insights
+
