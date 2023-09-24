@@ -11,6 +11,7 @@ Dicionário de dados
 - Company_size: indica o tamanho da empresa, podendo ser 'S' (Small ou Pequena), 'M' (Medium ou Média) e 'L' (Large ou Grande).
 
 Foram criadas colunas descritivas para facilitar na visualização de dados, além de outros arquivos CSV para realizar correlação de dados, como identificar continente do país.
+
 Para eliminar possíveis duplicatas remanescentes, foi criado o campo 'ID' formatado da seguinte forma:
 Work_year + Expert_level + Employment_type + Salary_in_USD + Company_location + Job_title
 E através desse ID foram encontrados e retirados mais alguns registros duplicados. 
@@ -60,3 +61,62 @@ Encerrando as análises individuais dos dados para passarmos para a parte de ver
 
 ** Relacionando dados para extrair insights
 
+Relação entre salário anual em dólar com os níveis dos cargos (Salary_in_usd x Expert_level)
+
+O gráfico abaixo retrata a variação entre mínimo, média e máximo dos salarios, por nivel do cargo
+
+//qtdade_nivel - tabela 2
+
+Podemos ver a seguir a evolução dos salários ao longo dos anos de 2020 a 2023
+
+//qtdade_nivel - tabela 3
+
+A seguir visualizações da evolução de cada nível de cargo separadamente
+
+Entry
+
+//qtdade_nivel - entry
+
+Middle
+
+//qtdade_nivel - middle
+
+Senior
+
+//qtdade_nivel - senior
+
+Expert
+
+//qtdade_nivel - expert
+
+
+
+Distribuição mundial
+
+//map
+
+
+Distribuição geográfica
+
+Cargos por Continente
+
+//continente - figura 1
+
+Média salarial por continente
+
+//continente - figura 3
+
+Quantidade de cargos por nível e continente
+
+//continente - figura 2
+
+
+Quantidade de nomes de cargos registrados - mostrando apenas os cargos com 50 ou mais registros
+
+//cargos_dist - figura 1
+
+Média salarial por cargo
+
+Baseado nos cargos do gráfico anterior, veja o gráfico abaixo
+
+//cargos_dist - figura 2
